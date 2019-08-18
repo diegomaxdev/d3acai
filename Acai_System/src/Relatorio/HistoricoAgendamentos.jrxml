@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioContabil05_2015" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="da035cc6-38ce-4430-a776-8fefa7068fdf">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.background.image.properties" value="true,true,0.25,-8,-8,0,0,611,249"/>
+	<parameter name="periodo" class="java.lang.String"/>
+	<parameter name="usuario" class="java.lang.String"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="hora" class="java.lang.String"/>
+	<field name="dataVisual" class="java.lang.String"/>
+	<field name="idCliente" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band height="555"/>
+	</background>
+	<title>
+		<band height="72"/>
+	</title>
+	<pageHeader>
+		<band>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-92" width="842" height="91" backcolor="#006699" uuid="c0d2a51f-7776-4968-b19d-23cd748574ca"/>
+				<staticText>
+					<reportElement x="322" y="13" width="248" height="20" forecolor="#FFFFFF" uuid="bd4194cb-c289-4650-975f-a74c923bfe56"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Relatório de Agendamentos]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="322" y="54" width="248" height="20" forecolor="#FFFFFF" uuid="f81a1fe4-edc9-4ccb-b415-a5a9e1d366ce"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{periodo}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="322" y="33" width="248" height="20" forecolor="#FFFFFF" uuid="9092d4ed-95a9-4f13-aa98-b8d15727d50c"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true" isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{usuario}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="843" height="1" forecolor="#666666" uuid="93fffdb0-65b3-432e-b801-55dcd377c867"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="69" y="0" width="281" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="37115d33-39f2-43a9-bc8a-ddb455bcc158"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="633" y="0" width="84" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="5275fa0b-4f74-4f39-9696-772d1221008e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="717" y="0" width="84" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="bd6372c3-96c6-4b8f-bc75-eae3f83289a7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="801" y="0" width="21" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="f5559658-f08f-4dc6-af18-3ee79abad207"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="0" width="20" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="2745532a-fe9d-4a40-807f-03d4249ee428"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="69" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="4802b362-45c7-42c0-a6be-22d7aa9d3341"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cod. Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="350" y="0" width="283" height="20" forecolor="#0066CC" backcolor="#CCCCCC" uuid="0e98fba1-84cb-41b6-b4e0-2b977163fbdb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21">
+			<textField>
+				<reportElement x="633" y="0" width="84" height="20" uuid="2cb150bc-da04-45bd-877d-8bc95516a321"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dataVisual}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="25d276d4-8fff-44c2-a73d-0fe10a002f77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{idCliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="0" width="283" height="20" uuid="c5895bf0-7338-458a-9c44-cdf4d95aa8b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="717" y="-1" width="84" height="20" uuid="c41ec08f-e4c9-4676-ac39-3b4b29449c39"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="1" width="283" height="20" uuid="54d85a5c-fbf2-48f6-82c9-98b5cb327558"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22">
+			<textField>
+				<reportElement mode="Opaque" x="-20" y="7" width="802" height="13" forecolor="#0066CC" backcolor="#CCCCCC" uuid="c7a9e562-5e15-4793-b351-0976e0d849a0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="782" y="7" width="40" height="13" forecolor="#0066CC" backcolor="#CCCCCC" uuid="f2d05611-c1a7-4281-89ea-8fb07cb6933b"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="-15" y="7" width="120" height="13" forecolor="#0066CC" uuid="33360554-76b3-47d1-a066-5bbe4bdb4126"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="-20" y="5" width="843" height="1" uuid="d3245f0d-ab78-4446-97b7-5e9e50ae1c20"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
